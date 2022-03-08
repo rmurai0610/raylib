@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.0)
 project(raylib)
 
+#set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fno-omit-frame-pointer -fsanitize=undefined -fsanitize=address")
+#set (CMAKE_LINKER_FLAGS "${CMAKE_LINKER_FLAGS} -fno-omit-frame-pointer -fsanitize=undefined -fsanitize=address")
+
 # Directory for easier includes
 # Anywhere you see include(...) you can check <root>/cmake for that file
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
